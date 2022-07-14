@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import TerminalService from 'primevue/terminalservice';
+import TerminalService from 'primevue-vwinc/terminalservice';
 
 export default {
     name: 'Terminal',

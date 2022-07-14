@@ -164,7 +164,7 @@
 </template>
 
 <script>
-import {FilterMatchMode} from 'primevue/api';
+import {FilterMatchMode} from 'primevue-vwinc/api';
 import ProductService from '../../service/ProductService';
 
 export default {
@@ -202,7 +202,7 @@ export default {
                 </template>
             </Toolbar>
 
-            <DataTable ref="dt" :value="products" v-model:selection="selectedProducts" dataKey="id" 
+            <DataTable ref="dt" :value="products" v-model:selection="selectedProducts" dataKey="id"
                 :paginator="true" :rows="10" :filters="filters"
                 paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[5,10,25]"
                 currentPageReportTemplate="Showing {first} to {last} of {totalRecords} products" responsiveLayout="scroll">
@@ -341,7 +341,7 @@ export default {
 </template>
 
 <script>
-import { FilterMatchMode } from 'primevue/api';
+import { FilterMatchMode } from 'primevue-vwinc/api';
 import ProductService from './service/ProductService';
 
 export default {
@@ -491,7 +491,7 @@ export default {
 @media screen and (max-width: 960px) {
 	::v-deep(.p-toolbar) {
 		flex-wrap: wrap;
-        
+
 		.p-button {
             margin-bottom: 0.25rem;
         }
@@ -518,7 +518,7 @@ export default {
                 </template>
             </Toolbar>
 
-            <DataTable ref="dt" :value="products" v-model:selection="selectedProducts" dataKey="id" 
+            <DataTable ref="dt" :value="products" v-model:selection="selectedProducts" dataKey="id"
                 :paginator="true" :rows="10" :filters="filters"
                 paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[5,10,25]"
                 currentPageReportTemplate="Showing {first} to {last} of {totalRecords} products" responsiveLayout="scroll">
@@ -658,7 +658,7 @@ export default {
 
 <script>
 import { ref, onMounted } from 'vue';
-import { FilterMatchMode } from 'primevue/api';
+import { FilterMatchMode } from 'primevue-vwinc/api';
 import { useToast } from 'primevue/usetoast';
 import ProductService from './service/ProductService';
 
@@ -769,7 +769,7 @@ export default {
             toast.add({severity:'success', summary: 'Successful', detail: 'Products Deleted', life: 3000});
         };
 
-        return { dt, products, productDialog, deleteProductDialog, deleteProductsDialog, product, 
+        return { dt, products, productDialog, deleteProductDialog, deleteProductsDialog, product,
             selectedProducts, filters, submitted, statuses, formatCurrency, openNew, hideDialog, saveProduct, editProduct,
             confirmDeleteProduct, deleteProduct, findIndexById, createId, exportCSV, confirmDeleteSelected, deleteSelectedProducts}
     }
@@ -806,7 +806,7 @@ export default {
 @media screen and (max-width: 960px) {
 	::v-deep(.p-toolbar) {
 		flex-wrap: wrap;
-        
+
 		.p-button {
             margin-bottom: 0.25rem;
         }
@@ -977,7 +977,7 @@ export default {
                     <p-button label="No" icon="pi pi-times" class="p-button-text" @click="deleteProductsDialog = false"></p-button>
                     <p-button label="Yes" icon="pi pi-check" class="p-button-text" @click="deleteSelectedProducts"></p-button>
                 </template>
-            </p-dialog>            
+            </p-dialog>
         </div>
 
         <script type="module">
@@ -1092,7 +1092,7 @@ export default {
                         toast.add({severity:'success', summary: 'Successful', detail: 'Products Deleted', life: 3000});
                     };
 
-                    return { dt, products, productDialog, deleteProductDialog, deleteProductsDialog, product, 
+                    return { dt, products, productDialog, deleteProductDialog, deleteProductsDialog, product,
                         selectedProducts, filters, submitted, statuses, formatCurrency, openNew, hideDialog, saveProduct, editProduct,
                         confirmDeleteProduct, deleteProduct, findIndexById, createId, exportCSV, confirmDeleteSelected, deleteSelectedProducts}
                 },
@@ -1118,7 +1118,7 @@ export default {
                 .use(primevue.toastservice)
                 .mount("#app");
         <\\/script>
-        
+
         <style lang="scss" scoped>
         .table-header {
             display: flex;
@@ -1150,7 +1150,7 @@ export default {
             .p-toolbar {
                 flex-wrap: wrap;
             }
-                
+
             .p-toolbar .p-button {
                 margin-bottom: 0.25rem;
             }

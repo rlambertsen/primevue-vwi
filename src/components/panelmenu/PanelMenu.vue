@@ -35,7 +35,7 @@
 
 <script>
 import PanelMenuSub from './PanelMenuSub.vue';
-import {UniqueComponentId} from 'primevue/utils';
+import {UniqueComponentId} from 'primevue-vwinc/utils';
 
 export default {
     name: 'PanelMenu',

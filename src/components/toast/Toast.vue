@@ -9,10 +9,10 @@
 </template>
 
 <script>
-import ToastEventBus from 'primevue/toasteventbus';
+import ToastEventBus from 'primevue-vwinc/toasteventbus';
 import ToastMessage from './ToastMessage.vue';
-import {ZIndexUtils,UniqueComponentId,ObjectUtils} from 'primevue/utils';
-import Portal from 'primevue/portal';
+import {ZIndexUtils,UniqueComponentId,ObjectUtils} from 'primevue-vwinc/utils';
+import Portal from 'primevue-vwinc/portal';
 
 var messageIdx = 0;
 

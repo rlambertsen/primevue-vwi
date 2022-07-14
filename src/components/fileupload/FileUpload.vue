@@ -40,11 +40,11 @@
 </template>
 
 <script>
-import Button from 'primevue/button';
-import ProgressBar from 'primevue/progressbar';
-import Message from 'primevue/message';
-import {DomHandler} from 'primevue/utils';
-import Ripple from 'primevue/ripple';
+import Button from 'primevue-vwinc/button';
+import ProgressBar from 'primevue-vwinc/progressbar';
+import Message from 'primevue-vwinc/message';
+import {DomHandler} from 'primevue-vwinc/utils';
+import Ripple from 'primevue-vwinc/ripple';
 
 export default {
     name: 'FileUpload',

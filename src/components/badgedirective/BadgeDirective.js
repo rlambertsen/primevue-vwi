@@ -1,5 +1,5 @@
-import {DomHandler} from 'primevue/utils';
-import {UniqueComponentId} from 'primevue/utils';
+import {DomHandler} from 'primevue-vwinc/utils';
+import {UniqueComponentId} from 'primevue-vwinc/utils';
 
 const BadgeDirective = {
     beforeMount(el, options) {
@@ -13,10 +13,10 @@ const BadgeDirective = {
         for (let modifier in options.modifiers) {
             DomHandler.addClass(badge, 'p-badge-' + modifier);
         }
-        
+
         if (options.value != null) {
             badge.appendChild(document.createTextNode(options.value));
-            
+
             if (String(options.value).length === 1) {
                 DomHandler.addClass(badge, 'p-badge-no-gutter');
             }

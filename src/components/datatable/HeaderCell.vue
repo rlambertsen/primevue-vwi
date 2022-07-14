@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import {DomHandler,ObjectUtils} from 'primevue/utils';
+import {DomHandler,ObjectUtils} from 'primevue-vwinc/utils';
 import HeaderCheckbox from './HeaderCheckbox.vue';
 import ColumnFilter from './ColumnFilter.vue';
 

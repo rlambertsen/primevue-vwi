@@ -4,7 +4,7 @@
             <img :src="'demo/images/primevue-logo-' + `${$appState.darkTheme ? 'light' : 'dark'}` + '.svg'" alt="primevue logo"/>
         </router-link>
         <div class="layout-sidebar-filter p-fluid">
-            <AutoComplete v-model="selectedRoute" :suggestions="filteredRoutes" @complete="searchRoute($event)" @item-select="onItemSelect($event)" scrollHeight="300px" placeholder="Search" 
+            <AutoComplete v-model="selectedRoute" :suggestions="filteredRoutes" @complete="searchRoute($event)" @item-select="onItemSelect($event)" scrollHeight="300px" placeholder="Search"
                 field="name" optionGroupLabel="name" optionGroupChildren="children" appendTo="self">
             </AutoComplete>
         </div>
@@ -50,13 +50,13 @@
                         <img :src="darkTheme ? item.imageDark : item.imageLight">
                     </a>
                 </div>
-            </template> 
+            </template>
         </div>
     </div>
 </template>
 
 <script>
-import {FilterService,FilterMatchMode} from 'primevue/api';
+import {FilterService,FilterMatchMode} from 'primevue-vwinc/api';
 import menudata from '@/assets/menu/menu.json';
 
 export default {
@@ -83,7 +83,7 @@ export default {
                 return !child.meta;
             })
 
-            this.routes.push(childRoute);            
+            this.routes.push(childRoute);
         });
     },
     methods: {
@@ -117,7 +117,7 @@ export default {
         },
         onItemSelect(event) {
             this.selectedRoute = null;
-            
+
             if (event.value.to)
                 this.$router.push(event.value.to)
             else if (event.value.href)

@@ -1,19 +1,25 @@
 <template>
 	<button :class="containerClass" type="button" v-ripple>
-		<span class="p-paginator-icon pi pi-angle-left"></span>
+		<slot name="prevBtnText">
+            <span class="p-paginator-icon pi pi-angle-left"></span>
+        </slot>
 	</button>
 </template>
 
 <script>
-import Ripple from 'primevue/ripple';
+import Ripple from 'primevue-vwinc/ripple';
 
 export default {
     name: 'PrevPageLink',
+    props: {
+        themeClass: {
+            type: String,
+            default: ''
+        }
+    },
     computed: {
         containerClass() {
-            return ['p-paginator-prev p-paginator-element p-link', {
-                'p-disabled': this.$attrs.disabled
-            }];
+            return [this.themeClass, {'p-disabled': this.$attrs.disabled}];
         }
     },
     directives: {

@@ -231,7 +231,7 @@ this.$toast.add({severity:'success', summary: 'Specific Message', group: 'mykey'
         <h5>Constants</h5>
         <p>ToastSeverity constants API is provided to easily choose a severity of the message with typescript.</p>
 <pre v-code.script><code>
-import {ToastSeverity} from 'primevue/api';
+import {ToastSeverity} from 'primevue-vwinc/api';
 
 export default {
     methods: {
@@ -544,7 +544,7 @@ import { useToast } from "primevue/usetoast";
 export default defineComponent({
     setup() {
         const toast = useToast();
-       
+
         const showSuccess = () => {
             toast.add({severity:'success', summary: 'Success Message', detail:'Message Content', life: 3000});
         }
@@ -587,7 +587,7 @@ export default defineComponent({
             toast.removeAllGroups();
         }
 
-        return { showSuccess, showInfo, showWarn, showError, showTopLeft, showBottomLeft, 
+        return { showSuccess, showInfo, showWarn, showError, showTopLeft, showBottomLeft,
             showBottomRight, showSticky, showMultiple, showTemplate, onConfirm, onReject, clear };
     }
 });
@@ -668,7 +668,7 @@ button {
         const App = {
             setup() {
                 const toast = useToast();
-            
+
                 const showSuccess = () => {
                     toast.add({severity:'success', summary: 'Success Message', detail:'Message Content', life: 3000});
                 }
@@ -711,7 +711,7 @@ button {
                     toast.removeAllGroups();
                 }
 
-                return { showSuccess, showInfo, showWarn, showError, showTopLeft, showBottomLeft, 
+                return { showSuccess, showInfo, showWarn, showError, showTopLeft, showBottomLeft,
                     showBottomRight, showSticky, showMultiple, showTemplate, onConfirm, onReject, clear };
             },
             components: {

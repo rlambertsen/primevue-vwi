@@ -9,9 +9,9 @@
 </template>
 
 <script>
-import {DomHandler,ZIndexUtils} from 'primevue/utils';
+import {DomHandler,ZIndexUtils} from 'primevue-vwinc/utils';
 import ContextMenuSub from './ContextMenuSub.vue';
-import Portal from 'primevue/portal';
+import Portal from 'primevue-vwinc/portal';
 
 export default {
     name: 'ContextMenu',

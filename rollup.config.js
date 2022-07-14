@@ -10,30 +10,30 @@ let entries = [];
 let core = {};
 
 let coreDependencies = {
-    'primevue/utils': 'primevue.utils',
-    'primevue/api': 'primevue.api',
-    'primevue/config': 'primevue.config',
-    'primevue/ripple': 'primevue.ripple',
-    'primevue/portal': 'primevue.portal',
-    'primevue/tooltip': 'primevue.tooltip',
-    'primevue/virtualscroller': 'primevue.virtualscroller',
-    'primevue/confirmationeventbus': 'primevue.confirmationeventbus',
-    'primevue/toasteventbus': 'primevue.toasteventbus',
-    'primevue/overlayeventbus': 'primevue.overlayeventbus',
-    'primevue/terminalservice': 'primevue.terminalservice',
-    'primevue/useconfirm': 'primevue.useconfirm',
-    'primevue/usetoast': 'primevue.usetoast',
-    'primevue/button': 'primevue.button',
-    'primevue/inputtext': 'primevue.inputtext',
-    'primevue/inputnumber': 'primevue.inputnumber',
-    'primevue/message': 'primevue.message',
-    'primevue/progressbar': 'primevue.progressbar',
-    'primevue/dropdown': 'primevue.dropdown',
-    'primevue/dialog': 'primevue.dialog',
-    'primevue/paginator': 'primevue.paginator',
-    'primevue/tree': 'primevue.tree',
-    'primevue/menu': 'primevue.menu',
-    'primevue/tieredmenu': 'primevue.tieredmenu'
+    'primevue-vwinc/utils': 'primevue-vwinc.utils',
+    'primevue-vwinc/api': 'primevue-vwinc.api',
+    'primevue-vwinc/config': 'primevue-vwinc.config',
+    'primevue-vwinc/ripple': 'primevue-vwinc.ripple',
+    'primevue-vwinc/portal': 'primevue-vwinc.portal',
+    'primevue-vwinc/tooltip': 'primevue-vwinc.tooltip',
+    'primevue-vwinc/virtualscroller': 'primevue-vwinc.virtualscroller',
+    'primevue-vwinc/confirmationeventbus': 'primevue-vwinc.confirmationeventbus',
+    'primevue-vwinc/toasteventbus': 'primevue-vwinc.toasteventbus',
+    'primevue-vwinc/overlayeventbus': 'primevue-vwinc.overlayeventbus',
+    'primevue-vwinc/terminalservice': 'primevue-vwinc.terminalservice',
+    'primevue-vwinc/useconfirm': 'primevue-vwinc.useconfirm',
+    'primevue-vwinc/usetoast': 'primevue-vwinc.usetoast',
+    'primevue-vwinc/button': 'primevue-vwinc.button',
+    'primevue-vwinc/inputtext': 'primevue-vwinc.inputtext',
+    'primevue-vwinc/inputnumber': 'primevue-vwinc.inputnumber',
+    'primevue-vwinc/message': 'primevue-vwinc.message',
+    'primevue-vwinc/progressbar': 'primevue-vwinc.progressbar',
+    'primevue-vwinc/dropdown': 'primevue-vwinc.dropdown',
+    'primevue-vwinc/dialog': 'primevue-vwinc.dialog',
+    'primevue-vwinc/paginator': 'primevue-vwinc.paginator',
+    'primevue-vwinc/tree': 'primevue-vwinc.tree',
+    'primevue-vwinc/menu': 'primevue-vwinc.menu',
+    'primevue-vwinc/tieredmenu': 'primevue-vwinc.tieredmenu'
 }
 
 let globalDependencies = {
@@ -43,7 +43,7 @@ let globalDependencies = {
 }
 
 function addEntry(folder, inFile, outFile) {
-    let useCorePlugin = Object.keys(coreDependencies).some(d => d.replace('primevue/', '') === outFile);
+    let useCorePlugin = Object.keys(coreDependencies).some(d => d.replace('primevue-vwinc/', '') === outFile);
 
     entries.push({
         input: 'src/components/' + folder + '/' + inFile,
@@ -124,7 +124,7 @@ function addCore() {
             generateBundle() {
                 Object.entries(core).forEach(([filePath, value]) => {
                     const code = Object.keys(coreDependencies).reduce((val, d) => {
-                        const name = d.replace('primevue/', '');
+                        const name = d.replace('primevue-vwinc/', '');
                         val += value[name] + '\n';
 
                         return val;

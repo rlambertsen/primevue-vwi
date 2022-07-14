@@ -12,8 +12,8 @@
 </template>
 
 <script>
-import {ObjectUtils} from 'primevue/utils';
-import Ripple from 'primevue/ripple';
+import {ObjectUtils} from 'primevue-vwinc/utils';
+import Ripple from 'primevue-vwinc/ripple';
 
 export default {
     name: 'SelectButton',

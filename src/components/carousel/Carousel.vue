@@ -53,9 +53,9 @@
 </template>
 
 <script>
-import {UniqueComponentId} from 'primevue/utils';
-import {DomHandler} from 'primevue/utils';
-import Ripple from 'primevue/ripple';
+import {UniqueComponentId} from 'primevue-vwinc/utils';
+import {DomHandler} from 'primevue-vwinc/utils';
+import Ripple from 'primevue-vwinc/ripple';
 
 export default {
     name: 'Carousel',

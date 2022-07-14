@@ -834,7 +834,7 @@
 - DataTable, exportCSV failed: TypeError: Cannot read property 'type' of undefined [\#941](https://github.com/primefaces/primevue/issues/941)
 - Calendar component throws error on blur if popup is not visible [\#940](https://github.com/primefaces/primevue/issues/940)
 - Optional chaining not working for TreeTable in version 3.2.1 [\#939](https://github.com/primefaces/primevue/issues/939)
-- Casing error in primevue/terminalservice/package.json [\#937](https://github.com/primefaces/primevue/issues/937)
+- Casing error in primevue-vwinc/terminalservice/package.json [\#937](https://github.com/primefaces/primevue/issues/937)
 
 ## [3.2.1](https://github.com/primefaces/primevue/tree/3.2.1) (2021-02-03)
 

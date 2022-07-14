@@ -19,11 +19,11 @@
 </template>
 
 <script>
-import ConfirmationEventBus from 'primevue/confirmationeventbus';
-import {ConnectedOverlayScrollHandler,DomHandler,ZIndexUtils} from 'primevue/utils';
-import OverlayEventBus from 'primevue/overlayeventbus';
-import Button from 'primevue/button';
-import Portal from 'primevue/portal';
+import ConfirmationEventBus from 'primevue-vwinc/confirmationeventbus';
+import {ConnectedOverlayScrollHandler,DomHandler,ZIndexUtils} from 'primevue-vwinc/utils';
+import OverlayEventBus from 'primevue-vwinc/overlayeventbus';
+import Button from 'primevue-vwinc/button';
+import Portal from 'primevue-vwinc/portal';
 
 export default {
     name: 'ConfirmPopup',

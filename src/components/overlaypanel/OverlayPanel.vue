@@ -14,10 +14,10 @@
 </template>
 
 <script>
-import {UniqueComponentId,DomHandler,ConnectedOverlayScrollHandler,ZIndexUtils} from 'primevue/utils';
-import OverlayEventBus from 'primevue/overlayeventbus';
-import Ripple from 'primevue/ripple';
-import Portal from 'primevue/portal';
+import {UniqueComponentId,DomHandler,ConnectedOverlayScrollHandler,ZIndexUtils} from 'primevue-vwinc/utils';
+import OverlayEventBus from 'primevue-vwinc/overlayeventbus';
+import Ripple from 'primevue-vwinc/ripple';
+import Portal from 'primevue-vwinc/portal';
 
 export default {
     name: 'OverlayPanel',

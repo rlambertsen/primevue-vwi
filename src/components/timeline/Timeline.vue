@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import {ObjectUtils} from 'primevue/utils';
+import {ObjectUtils} from 'primevue-vwinc/utils';
 
 export default {
     name: 'Timeline',

@@ -52,12 +52,12 @@
 </template>
 
 <script>
-import {ConnectedOverlayScrollHandler,UniqueComponentId,ObjectUtils,DomHandler,ZIndexUtils} from 'primevue/utils';
-import OverlayEventBus from 'primevue/overlayeventbus';
-import Button from 'primevue/button';
-import Ripple from 'primevue/ripple';
-import VirtualScroller from 'primevue/virtualscroller';
-import Portal from 'primevue/portal';
+import {ConnectedOverlayScrollHandler,UniqueComponentId,ObjectUtils,DomHandler,ZIndexUtils} from 'primevue-vwinc/utils';
+import OverlayEventBus from 'primevue-vwinc/overlayeventbus';
+import Button from 'primevue-vwinc/button';
+import Ripple from 'primevue-vwinc/ripple';
+import VirtualScroller from 'primevue-vwinc/virtualscroller';
+import Portal from 'primevue-vwinc/portal';
 
 export default {
     name: 'AutoComplete',

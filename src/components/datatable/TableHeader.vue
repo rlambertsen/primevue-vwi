@@ -51,7 +51,7 @@
 import HeaderCell from './HeaderCell.vue';
 import HeaderCheckbox from './HeaderCheckbox.vue';
 import ColumnFilter from './ColumnFilter.vue';
-import {ObjectUtils} from 'primevue/utils';
+import {ObjectUtils} from 'primevue-vwinc/utils';
 
 export default {
     name: 'TableHeader',

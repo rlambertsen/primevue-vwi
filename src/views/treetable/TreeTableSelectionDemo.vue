@@ -125,7 +125,7 @@ export default {
                 <Column field="type" header="Type"></Column>
             </TreeTable>
         </div>
-    </div>                    
+    </div>
 </template>
 
 <script>
@@ -213,12 +213,12 @@ export default {
                 <Column field="type" header="Type"></Column>
             </TreeTable>
         </div>
-    </div>                    
+    </div>
 </template>
 
 <script>
 import { ref, onMounted } from 'vue';
-import { useToast } from 'primevue/usetoast';
+import { useToast } from 'primevue-vwinc/usetoast';
 import NodeService from './service/NodeService';
 
 export default {
@@ -303,7 +303,7 @@ export default {
                     <p-column field="type" header="Type"></p-column>
                 </p-treetable>
             </div>
-        </div>                    
+        </div>
 
         <script type="module">
         const { createApp, ref, onMounted } = Vue;

@@ -142,11 +142,11 @@
 </template>
 
 <script>
-import {ConnectedOverlayScrollHandler,DomHandler,ZIndexUtils,UniqueComponentId} from 'primevue/utils';
-import OverlayEventBus from 'primevue/overlayeventbus';
-import Button from 'primevue/button';
-import Ripple from 'primevue/ripple';
-import Portal from 'primevue/portal';
+import {ConnectedOverlayScrollHandler,DomHandler,ZIndexUtils,UniqueComponentId} from 'primevue-vwinc/utils';
+import OverlayEventBus from 'primevue-vwinc/overlayeventbus';
+import Button from 'primevue-vwinc/button';
+import Ripple from 'primevue-vwinc/ripple';
+import Portal from 'primevue-vwinc/portal';
 
 export default {
     name: 'Calendar',

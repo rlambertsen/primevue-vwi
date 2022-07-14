@@ -123,7 +123,7 @@
 
 <script>
 import CustomerService from '../../service/CustomerService';
-import {FilterMatchMode,FilterOperator} from 'primevue/api';
+import {FilterMatchMode,FilterOperator} from 'primevue-vwinc/api';
 import DataTableDoc from './DataTableDoc';
 
 export default {
@@ -165,7 +165,7 @@ export default {
     },
     mounted() {
         this.customerService.getCustomersLarge().then(data => {
-            this.customers = data; 
+            this.customers = data;
             this.customers.forEach(customer => customer.date = new Date(customer.date));
             this.loading = false;
         });

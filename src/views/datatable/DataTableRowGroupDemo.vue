@@ -284,7 +284,7 @@ export default {
         margin-right: .25rem;
     }
 }
-</style>                    
+</style>
 `
                 },
                 'composition-api': {
@@ -395,7 +395,7 @@ export default {
 
 <script>
 import { ref, onMounted } from 'vue';
-import { useToast } from 'primevue/usetoast';
+import { useToast } from 'primevue-vwinc/usetoast';
 import CustomerService from './service/CustomerService';
 
 export default {
@@ -449,7 +449,7 @@ export default {
         margin-right: .25rem;
     }
 }
-</style>                    
+</style>
 `
                 },
                 'browser-source': {
@@ -622,7 +622,7 @@ export default {
         vertical-align: middle;
         margin-right: .25rem;
     }
-    </style>                    
+    </style>
 `
                 }
             }

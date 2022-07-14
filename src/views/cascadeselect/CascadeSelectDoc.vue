@@ -2,7 +2,7 @@
 	<AppDoc name="CascadeSelectDemo" :sources="sources" github="cascadeselect/CascadeSelectDemo.vue">
         <h5>Import via Module</h5>
 <pre v-code.script><code>
-import CascadeSelect from 'primevue/cascadeselect';
+import CascadeSelect from 'primevue-vwinc/cascadeselect';
 
 </code></pre>
 
@@ -17,9 +17,9 @@ import CascadeSelect from 'primevue/cascadeselect';
 		<p>CascadeSelect requires a value to bind and a collection of arbitrary objects with a nested hierarchy. <i>optionGroupLabel</i>
             is used for the text of a category and <i>optionGroupChildren</i> is to define the children of the category. Note that order of the <i>optionGroupChildren</i>
             matters and it should correspond to the data hierarchy.</p>
-                    
+
 <pre v-code><code>
-&lt;CascadeSelect v-model="selectedCity" :options="countries" optionLabel="cname" optionGroupLabel="name" 
+&lt;CascadeSelect v-model="selectedCity" :options="countries" optionLabel="cname" optionGroupLabel="name"
                         :optionGroupChildren="['states', 'cities']" style="minWidth: 14rem" &gt;
 
 </code></pre>
@@ -49,11 +49,11 @@ data() {
                                 &#123;cname: 'Townsville', code: 'A-TO'&#125;
                             ]
                         &#125;,
-                        
+
                     ]
                 &#125;,
                 &#123;
-                    name: 'Canada', 
+                    name: 'Canada',
                     code: 'CA',
                     states: [
                         &#123;
@@ -70,7 +70,7 @@ data() {
                                 &#123;cname: 'Toronto', code: 'C-TO'&#125;
                             ]
                         &#125;,
-                        
+
                     ]
                 &#125;,
                 &#123;
@@ -105,7 +105,7 @@ data() {
                     ]
                 &#125;
             ]
-        &#125; 
+        &#125;
     &#125;
 }
 
@@ -115,7 +115,7 @@ data() {
         <p>Content of an item can be customized with the <i>option</i> template.</p>
 
 <pre v-code><code><template v-pre>
-&lt;CascadeSelect v-model="selectedCity" :options="countries" optionLabel="cname" optionGroupLabel="name" 
+&lt;CascadeSelect v-model="selectedCity" :options="countries" optionLabel="cname" optionGroupLabel="name"
         :optionGroupChildren="['states', 'cities']" style="minWidth: 14rem"&gt;
     &lt;template #option="slotProps"&gt;
         &lt;div class="country-item"&gt;
@@ -380,7 +380,7 @@ export default {
                 :optionGroupChildren="['states', 'cities']" style="minWidth: 14rem" placeholder="Select a City" />
 
         <h5>Templating</h5>
-        <CascadeSelect v-model="selectedCity2" :options="countries" optionLabel="cname" optionGroupLabel="name" 
+        <CascadeSelect v-model="selectedCity2" :options="countries" optionLabel="cname" optionGroupLabel="name"
                 :optionGroupChildren="['states', 'cities']" style="minWidth: 14rem" placeholder="Select a City">
             <template #option="slotProps">
                 <div class="country-item">
@@ -423,11 +423,11 @@ export default {
                                 {cname: 'Townsville', code: 'A-TO'}
                             ]
                         },
-                        
+
                     ]
                 },
                 {
-                    name: 'Canada', 
+                    name: 'Canada',
                     code: 'CA',
                     states: [
                         {
@@ -444,7 +444,7 @@ export default {
                                 {cname: 'Toronto', code: 'C-TO'}
                             ]
                         },
-                        
+
                     ]
                 },
                 {
@@ -479,7 +479,7 @@ export default {
                     ]
                 }
             ]
-        } 
+        }
     }
 }
 <\\/script>
@@ -502,7 +502,7 @@ img {
                 :optionGroupChildren="['states', 'cities']" style="minWidth: 14rem" placeholder="Select a City" />
 
         <h5>Templating</h5>
-        <CascadeSelect v-model="selectedCity2" :options="countries" optionLabel="cname" optionGroupLabel="name" 
+        <CascadeSelect v-model="selectedCity2" :options="countries" optionLabel="cname" optionGroupLabel="name"
                 :optionGroupChildren="['states', 'cities']" style="minWidth: 14rem" placeholder="Select a City">
             <template #option="slotProps">
                 <div class="country-item">
@@ -546,11 +546,11 @@ export default {
                             {cname: 'Townsville', code: 'A-TO'}
                         ]
                     },
-                    
+
                 ]
             },
             {
-                name: 'Canada', 
+                name: 'Canada',
                 code: 'CA',
                 states: [
                     {
@@ -567,7 +567,7 @@ export default {
                             {cname: 'Toronto', code: 'C-TO'}
                         ]
                     },
-                    
+
                 ]
             },
             {
@@ -626,7 +626,7 @@ img {
                     :option-group-children="['states', 'cities']" style="minWidth: 14rem" placeholder="Select a City"></p-cascadeselect>
 
             <h5>Templating</h5>
-            <p-cascadeselect v-model="selectedCity2" :options="countries" option-label="cname" option-group-label="name" 
+            <p-cascadeselect v-model="selectedCity2" :options="countries" option-label="cname" option-group-label="name"
                     :option-group-children="['states', 'cities']" style="minWidth: 14rem" placeholder="Select a City">
                 <template #option="slotProps">
                     <div class="country-item">
@@ -669,11 +669,11 @@ img {
                                     {cname: 'Townsville', code: 'A-TO'}
                                 ]
                             },
-                            
+
                         ]
                     },
                     {
-                        name: 'Canada', 
+                        name: 'Canada',
                         code: 'CA',
                         states: [
                             {
@@ -690,7 +690,7 @@ img {
                                     {cname: 'Toronto', code: 'C-TO'}
                                 ]
                             },
-                            
+
                         ]
                     },
                     {

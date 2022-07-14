@@ -161,7 +161,7 @@
                         <Button label="Submit" icon="pi pi-check" class="mr-2 mb-2" />
                         <Button label="Submit" icon="pi pi-check" iconPos="right" class="mr-2 mb-2" />
                         <Button label="Disabled" disabled="disabled" class="mr-2 mb-2" />
-                    
+
                         <h5>Severities</h5>
                         <Button label="Primary" class="mr-2 mb-2" />
                         <Button label="Secondary" class="p-button-secondary mr-2 mb-2" />
@@ -517,17 +517,17 @@
             </div>
         </div>
 
-        <AppDoc name="ResponsiveDemo" :sources="sources" :service="['CustomerService', 'CountryService', 'ProductService']" 
+        <AppDoc name="ResponsiveDemo" :sources="sources" :service="['CustomerService', 'CountryService', 'ProductService']"
             :data="['customers-large', 'countries', 'products-small']" github="responsive/ResponsiveDemo.vue" />
     </div>
 </template>
 
 <script>
-import { FilterMatchMode, FilterOperator } from 'primevue/api';
+import { FilterMatchMode, FilterOperator } from 'primevue-vwinc/api';
 import CustomerService from '../../service/CustomerService';
 import CountryService from '../../service/CountryService';
 import ProductService from '../../service/ProductService';
-    
+
 export default {
     data() {
         return {
@@ -891,7 +891,7 @@ export default {
                     <Button label="Submit" icon="pi pi-check" class="mr-2 mb-2" />
                     <Button label="Submit" icon="pi pi-check" iconPos="right" class="mr-2 mb-2" />
                     <Button label="Disabled" disabled="disabled" class="mr-2 mb-2" />
-                    
+
                     <h5>Severities</h5>
                     <Button label="Primary" class="mr-2 mb-2" />
                     <Button label="Secondary" class="p-button-secondary mr-2 mb-2" />
@@ -1255,11 +1255,11 @@ export default {
 </template>
 
 <script>
-import { FilterMatchMode, FilterOperator } from 'primevue/api';
+import { FilterMatchMode, FilterOperator } from 'primevue-vwinc/api';
 import CustomerService from './service/CustomerService';
 import CountryService from './service/CountryService';
 import ProductService from './service/ProductService';
-    
+
 export default {
     data() {
         return {
@@ -1615,14 +1615,14 @@ export default {
 .product-image {
     width: 50px;
     box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
-}    
+}
 
 ::v-deep(.p-paginator) {
     .p-paginator-current {
         margin-left: auto;
     }
 }
-</style>                    
+</style>
 `
                 },
                 'composition-api': {
@@ -1783,7 +1783,7 @@ export default {
                     <Button label="Submit" icon="pi pi-check" class="mr-2 mb-2" />
                     <Button label="Submit" icon="pi pi-check" iconPos="right" class="mr-2 mb-2" />
                     <Button label="Disabled" disabled="disabled" class="mr-2 mb-2" />
-                    
+
                     <h5>Severities</h5>
                     <Button label="Primary" class="mr-2 mb-2" />
                     <Button label="Secondary" class="p-button-secondary mr-2 mb-2" />
@@ -2148,13 +2148,13 @@ export default {
 
 <script>
 import { ref, onMounted } from 'vue';
-import { FilterMatchMode, FilterOperator } from 'primevue/api';
+import { FilterMatchMode, FilterOperator } from 'primevue-vwinc/api';
 import { useToast } from 'primevue/usetoast';
 import { useConfirm } from 'primevue/useconfirm';
 import CustomerService from './service/CustomerService';
 import CountryService from './service/CountryService';
 import ProductService from './service/ProductService';
-    
+
 export default {
     setup() {
         onMounted(() => {
@@ -2453,8 +2453,8 @@ export default {
         };
 
         return { menu, contextMenu, op, customers, selectedCustomers, products, selectedProduct, filters, floatValue, autoValue, selectedAutoValue,
-            autoFilteredValue, calendarValue, inputNumberValue, chipsValue, sliderValue, ratingValue, colorValue, radioValue, 
-            checkboxValue, switchValue, display, listboxValues, listboxValue, dropdownValues, dropdownValue, multiselectValue, 
+            autoFilteredValue, calendarValue, inputNumberValue, chipsValue, sliderValue, ratingValue, colorValue, radioValue,
+            checkboxValue, switchValue, display, listboxValues, listboxValue, dropdownValues, dropdownValue, multiselectValue,
             multiselectValues, toggleValue, selectButtonValues1, selectButtonValue1, selectButtonValues2, selectButtonValue2,
             tieredMenuItems, menuitems, contextMenuItems, message, timelineEvents, toggleMenu, onContextRightClick, searchCountry,
             addMessage, showToast, open, close, toggle, confirmWithPopup, confirmWithDialog, formatCurrency, onProductSelect }
@@ -2514,14 +2514,14 @@ export default {
 .product-image {
     width: 50px;
     box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
-}    
+}
 
 ::v-deep(.p-paginator) {
     .p-paginator-current {
         margin-left: auto;
     }
 }
-</style>                    
+</style>
 `
                 },
                 'browser-source': {
@@ -2719,7 +2719,7 @@ export default {
                         <p-button label="Submit" icon="pi pi-check" class="mr-2 mb-2"></p-button>
                         <p-button label="Submit" icon="pi pi-check" iconPos="right" class="mr-2 mb-2"></p-button>
                         <p-button label="Disabled" disabled="disabled" class="mr-2 mb-2"></p-button>
-                        
+
                         <h5>Severities</h5>
                         <p-button label="Primary" class="mr-2 mb-2"></p-button>
                         <p-button label="Secondary" class="p-button-secondary mr-2 mb-2"></p-button>
@@ -3087,7 +3087,7 @@ export default {
         const { useToast } = primevue.usetoast;
         const { useConfirm } = primevue.useconfirm;
         const BadgeDirective = primevue.badgedirective
-            
+
         const App = {
             setup() {
                 onMounted(() => {
@@ -3386,8 +3386,8 @@ export default {
                 };
 
                 return { menu, contextMenu, op, customers, selectedCustomers, products, selectedProduct, filters, floatValue, autoValue, selectedAutoValue,
-                    autoFilteredValue, calendarValue, inputNumberValue, chipsValue, sliderValue, ratingValue, colorValue, radioValue, 
-                    checkboxValue, switchValue, display, listboxValues, listboxValue, dropdownValues, dropdownValue, multiselectValue, 
+                    autoFilteredValue, calendarValue, inputNumberValue, chipsValue, sliderValue, ratingValue, colorValue, radioValue,
+                    checkboxValue, switchValue, display, listboxValues, listboxValue, dropdownValues, dropdownValue, multiselectValue,
                     multiselectValues, toggleValue, selectButtonValues1, selectButtonValue1, selectButtonValues2, selectButtonValue2,
                     tieredMenuItems, menuitems, contextMenuItems, message, timelineEvents, toggleMenu, onContextRightClick, searchCountry,
                     addMessage, showToast, open, close, toggle, confirmWithPopup, confirmWithDialog, formatCurrency, onProductSelect }
@@ -3501,12 +3501,12 @@ export default {
         .product-image {
             width: 50px;
             box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
-        }    
+        }
 
         .p-paginator .p-paginator-current {
             margin-left: auto;
         }
-        </style>                    
+        </style>
 `
                 }
             }
@@ -3661,7 +3661,7 @@ export default {
 .product-image {
     width: 50px;
     box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
-}    
+}
 
 ::v-deep(.p-paginator) {
     .p-paginator-current {

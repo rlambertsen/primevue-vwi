@@ -9,7 +9,10 @@
             <slot name="header"></slot>
         </div>
         <DTPaginator v-if="paginatorTop" :rows="d_rows" :first="d_first" :totalRecords="totalRecordsLength" :pageLinkSize="pageLinkSize" :template="paginatorTemplate" :rowsPerPageOptions="rowsPerPageOptions"
-                :currentPageReportTemplate="currentPageReportTemplate" class="p-paginator-top" @page="onPage($event)" :alwaysShow="alwaysShowPaginator">
+                     :currentPageReportTemplate="currentPageReportTemplate" class="p-paginator-top" @page="onPage($event)" :alwaysShow="alwaysShowPaginator"
+                     :prev-page-btn-class="prevPageBtnClass"
+                     :next-page-btn-class="nextPageBtnClass"
+        >
             <template #start v-if="$slots.paginatorstart">
                 <slot name="paginatorstart"></slot>
             </template>
@@ -36,7 +39,12 @@
                             @row-toggle="toggleRow($event)" @radio-change="toggleRowWithRadio($event)" @checkbox-change="toggleRowWithCheckbox($event)"
                             @cell-edit-init="onCellEditInit($event)" @cell-edit-complete="onCellEditComplete($event)" @cell-edit-cancel="onCellEditCancel($event)"
                             @row-edit-init="onRowEditInit($event)" @row-edit-save="onRowEditSave($event)" @row-edit-cancel="onRowEditCancel($event)"
-                            :editingMeta="d_editingMeta" @editing-meta-change="onEditingMetaChange" :isVirtualScrollerDisabled="true"  />
+                            :editingMeta="d_editingMeta" @editing-meta-change="onEditingMetaChange" :isVirtualScrollerDisabled="true"
+                        >
+                            <template #tbodyTop v-if="$slots.tbodyTop">
+                                <slot name="tbodyTop"></slot>
+                            </template>
+                        </DTTableBody>
                         <DTTableBody :value="dataToRender(slotProps.rows)" :class="slotProps.styleClass" :columns="slotProps.columns" :empty="empty" :dataKey="dataKey" :selection="selection" :selectionKeys="d_selectionKeys" :selectionMode="selectionMode" :contextMenu="contextMenu" :contextMenuSelection="contextMenuSelection"
                             :rowGroupMode="rowGroupMode" :groupRowsBy="groupRowsBy" :expandableRowGroups="expandableRowGroups" :rowClass="rowClass" :rowStyle="rowStyle" :editMode="editMode" :compareSelectionBy="compareSelectionBy" :scrollable="scrollable"
                             :expandedRowIcon="expandedRowIcon" :collapsedRowIcon="collapsedRowIcon" :expandedRows="expandedRows" :expandedRowKeys="d_expandedRowKeys" :expandedRowGroups="expandedRowGroups"
@@ -47,19 +55,33 @@
                             @cell-edit-init="onCellEditInit($event)" @cell-edit-complete="onCellEditComplete($event)" @cell-edit-cancel="onCellEditCancel($event)"
                             @row-edit-init="onRowEditInit($event)" @row-edit-save="onRowEditSave($event)" @row-edit-cancel="onRowEditCancel($event)"
                             :editingMeta="d_editingMeta" @editing-meta-change="onEditingMetaChange"
-                            :virtualScrollerContentProps="slotProps" :isVirtualScrollerDisabled="virtualScrollerDisabled" />
+                            :virtualScrollerContentProps="slotProps" :isVirtualScrollerDisabled="virtualScrollerDisabled"
+                        >
+                            <template #tbodyTop v-if="$slots.tbodyTop">
+                                <slot name="tbodyTop"></slot>
+                            </template>
+                        </DTTableBody>
                         <DTTableFooter :columnGroup="footerColumnGroup" :columns="slotProps.columns" />
                     </table>
                 </template>
             </DTVirtualScroller>
         </div>
         <DTPaginator v-if="paginatorBottom" :rows="d_rows" :first="d_first" :totalRecords="totalRecordsLength" :pageLinkSize="pageLinkSize" :template="paginatorTemplate" :rowsPerPageOptions="rowsPerPageOptions"
-                :currentPageReportTemplate="currentPageReportTemplate" class="p-paginator-bottom" @page="onPage($event)" :alwaysShow="alwaysShowPaginator">
+                     :currentPageReportTemplate="currentPageReportTemplate" class="p-paginator-bottom" @page="onPage($event)" :alwaysShow="alwaysShowPaginator"
+                     :prev-page-btn-class="prevPageBtnClass"
+                     :next-page-btn-class="nextPageBtnClass"
+        >
             <template #start v-if="$slots.paginatorstart">
                 <slot name="paginatorstart"></slot>
             </template>
             <template #end v-if="$slots.paginatorend">
                 <slot name="paginatorend"></slot>
+            </template>
+            <template #prevBtnText v-if="$slots.prevBtnText">
+                <slot name="prevBtnText"></slot>
+            </template>
+            <template #nextBtnText v-if="$slots.nextBtnText">
+                <slot name="nextBtnText"></slot>
             </template>
         </DTPaginator>
         <div class="p-datatable-footer" v-if="$slots.footer">
@@ -72,10 +94,10 @@
 </template>
 
 <script>
-import {ObjectUtils,DomHandler,UniqueComponentId} from 'primevue/utils';
-import {FilterMatchMode,FilterOperator,FilterService} from 'primevue/api';
-import Paginator from 'primevue/paginator';
-import VirtualScroller from 'primevue/virtualscroller';
+import {ObjectUtils,DomHandler,UniqueComponentId} from 'primevue-vwinc/utils';
+import {FilterMatchMode,FilterOperator,FilterService} from 'primevue-vwinc/api';
+import Paginator from 'primevue-vwinc/paginator';
+import VirtualScroller from 'primevue-vwinc/virtualscroller';
 import TableHeader from './TableHeader.vue';
 import TableBody from './TableBody.vue';
 import TableFooter from './TableFooter.vue';
@@ -343,7 +365,15 @@ export default {
         tableClass: {
             type: String,
             default: null
-        }
+        },
+        prevPageBtnClass: {
+            type: String,
+            default: 'p-paginator-prev p-paginator-element p-link'
+        },
+        nextPageBtnClass: {
+            type: String,
+            default: 'p-paginator-next p-paginator-element p-link'
+        },
     },
     data() {
         return {

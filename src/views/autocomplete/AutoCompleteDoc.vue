@@ -477,7 +477,7 @@ export default {
 
 <script>
 import CountryService from './service/CountryService';
-import {FilterService,FilterMatchMode} from 'primevue/api';
+import {FilterService,FilterMatchMode} from 'primevue-vwinc/api';
 
 export default {
     data() {
@@ -615,7 +615,7 @@ export default {
 <script>
 import { ref, onMounted } from 'vue';
 import CountryService from './service/CountryService';
-import {FilterService,FilterMatchMode} from 'primevue/api';
+import {FilterService,FilterMatchMode} from 'primevue-vwinc/api';
 
 export default {
     setup() {

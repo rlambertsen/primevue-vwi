@@ -20,10 +20,10 @@
 </template>
 
 <script>
-import {ConnectedOverlayScrollHandler,DomHandler,ZIndexUtils} from 'primevue/utils';
-import OverlayEventBus from 'primevue/overlayeventbus';
-import InputText from 'primevue/inputtext';
-import Portal from 'primevue/portal';
+import {ConnectedOverlayScrollHandler,DomHandler,ZIndexUtils} from 'primevue-vwinc/utils';
+import OverlayEventBus from 'primevue-vwinc/overlayeventbus';
+import InputText from 'primevue-vwinc/inputtext';
+import Portal from 'primevue-vwinc/portal';
 
 export default {
     name: 'Password',

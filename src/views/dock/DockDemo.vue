@@ -71,7 +71,7 @@
                     :circular="true" :fullScreen="true" :showThumbnails="false" :showItemNavigators="true">
                     <template #item="slotProps">
                         <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="width: 100%" />
-                    </template>    
+                    </template>
                 </Galleria>
             </div>
         </div>
@@ -83,7 +83,7 @@
 <script>
 import NodeService from '../../service/NodeService';
 import PhotoService from '../../service/PhotoService';
-import TerminalService from 'primevue/terminalservice';
+import TerminalService from 'primevue-vwinc/terminalservice';
 import DockDoc from './DockDoc.vue';
 
 export default {

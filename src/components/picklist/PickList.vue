@@ -15,7 +15,7 @@
             <transition-group ref="sourceList" name="p-picklist-flip" tag="ul" class="p-picklist-list p-picklist-source" :style="listStyle" role="listbox" aria-multiselectable="multiple">
                 <template v-for="(item, i) of sourceList" :key="getItemKey(item, i)">
                     <li tabindex="0" :class="['p-picklist-item', {'p-highlight': isSelected(item, 0)}]" v-ripple
-                        @click="onItemClick($event, item, 0)" @dblclick="onItemDblClick($event, item, 0)" @keydown="onItemKeyDown($event, item, 0)" @touchend="onItemTouchEnd" 
+                        @click="onItemClick($event, item, 0)" @dblclick="onItemDblClick($event, item, 0)" @keydown="onItemKeyDown($event, item, 0)" @touchend="onItemTouchEnd"
                         role="option" :aria-selected="isSelected(item, 0)">
                         <slot name="item" :item="item" :index="i"> </slot>
                     </li>
@@ -37,7 +37,7 @@
             <transition-group ref="targetList" name="p-picklist-flip" tag="ul" class="p-picklist-list p-picklist-target" :style="listStyle" role="listbox" aria-multiselectable="multiple">
                 <template v-for="(item, i) of targetList" :key="getItemKey(item, i)">
                     <li tabindex="0" :class="['p-picklist-item', {'p-highlight': isSelected(item, 1)}]" v-ripple
-                        @click="onItemClick($event, item, 1)" @dblclick="onItemDblClick($event, item, 1)" @keydown="onItemKeyDown($event, item, 1)" @touchend="onItemTouchEnd" 
+                        @click="onItemClick($event, item, 1)" @dblclick="onItemDblClick($event, item, 1)" @keydown="onItemKeyDown($event, item, 1)" @touchend="onItemTouchEnd"
                         role="option" :aria-selected="isSelected(item, 1)">
                         <slot name="item" :item="item" :index="i"> </slot>
                     </li>
@@ -56,9 +56,9 @@
 </template>
 
 <script>
-import Button from 'primevue/button';
-import {ObjectUtils,UniqueComponentId,DomHandler} from 'primevue/utils';
-import Ripple from 'primevue/ripple';
+import Button from 'primevue-vwinc/button';
+import {ObjectUtils,UniqueComponentId,DomHandler} from 'primevue-vwinc/utils';
+import Ripple from 'primevue-vwinc/ripple';
 
 export default {
     name: 'PickList',

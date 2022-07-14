@@ -29,9 +29,9 @@
 </template>
 
 <script>
-import {UniqueComponentId,DomHandler,ZIndexUtils} from 'primevue/utils';
-import Ripple from 'primevue/ripple';
-import Portal from 'primevue/portal';
+import {UniqueComponentId,DomHandler,ZIndexUtils} from 'primevue-vwinc/utils';
+import Ripple from 'primevue-vwinc/ripple';
+import Portal from 'primevue-vwinc/portal';
 
 export default {
     name: 'Dialog',

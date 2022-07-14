@@ -77,12 +77,12 @@
             </div>
         </div>
     </section>
-    
+
 </template>
 
 <script>
 import CustomerService from '../../service/CustomerService';
-import {FilterMatchMode,FilterOperator} from 'primevue/api';
+import {FilterMatchMode,FilterOperator} from 'primevue-vwinc/api';
 
 export default {
     emits: ['table-theme-change'],

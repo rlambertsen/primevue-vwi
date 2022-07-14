@@ -17,8 +17,8 @@
 </template>
 
 <script>
-import {DomHandler,ObjectUtils} from 'primevue/utils';
-import Ripple from 'primevue/ripple'
+import {DomHandler,ObjectUtils} from 'primevue-vwinc/utils';
+import Ripple from 'primevue-vwinc/ripple'
 
 export default {
     name: 'BodyCell',

@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import Dropdown from 'primevue/dropdown';
+import Dropdown from 'primevue-vwinc/dropdown';
 
 export default {
     name: 'RowsPerPageDropdown',

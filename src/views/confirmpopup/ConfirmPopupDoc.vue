@@ -77,8 +77,8 @@ export default defineComponent({
                     //callback to execute when user rejects the action
                 }
             });
-        } 
-        
+        }
+
         return {delete};
     }
 })
@@ -201,7 +201,7 @@ export default {
                 </tbody>
             </table>
         </div>
-        
+
         <h5>ConfirmationService</h5>
         <div class="doc-tablewrapper">
             <table class="doc-table">
@@ -333,7 +333,7 @@ export default {
             <h5>Overlay</h5>
             <Button @click="confirm1($event)" icon="pi pi-check" label="Confirm" class="mr-2"></Button>
             <Button @click="confirm2($event)" icon="pi pi-times" label="Delete" class="p-button-danger p-button-outlined"></Button>
-    
+
             <h5>Templating</h5>
             <Button @click="showTemplate($event)" icon="pi pi-check" label="Terms and Conditions" class="mr-2"></Button>
         </div>
@@ -410,7 +410,7 @@ export default {
             <h5>Overlay</h5>
             <Button @click="confirm1($event)" icon="pi pi-check" label="Confirm" class="mr-2"></Button>
             <Button @click="confirm2($event)" icon="pi pi-times" label="Delete" class="p-button-danger p-button-outlined"></Button>
-    
+
             <h5>Templating</h5>
             <Button @click="showTemplate($event)" icon="pi pi-check" label="Terms and Conditions" class="mr-2"></Button>
         </div>
@@ -419,8 +419,8 @@ export default {
 
 <script>
 import { defineComponent } from "vue";
-import { useConfirm } from "primevue/useconfirm";
-import { useToast } from "primevue/usetoast";
+import { useConfirm } from "primevue-vwinc/useconfirm";
+import { useToast } from "primevue-vwinc/usetoast";
 
 export default defineComponent({
     setup() {

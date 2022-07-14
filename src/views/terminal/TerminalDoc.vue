@@ -3,7 +3,7 @@
         <h5>Import via Module</h5>
 <pre v-code.script><code>
 import Terminal from 'primevue/terminal';
-import TerminalService from 'primevue/terminalservice';
+import TerminalService from 'primevue-vwinc/terminalservice';
 
 </code></pre>
 
@@ -24,7 +24,7 @@ import TerminalService from 'primevue/terminalservice';
 </code></pre>
 
 <pre v-code.script><code>
-import TerminalService from 'primevue/terminalservice';
+import TerminalService from 'primevue-vwinc/terminalservice';
 
 export default {
      methods: {
@@ -148,7 +148,7 @@ export default {
 </template>
 
 <script>
-import TerminalService from "primevue/terminalservice";
+import TerminalService from "primevue-vwinc/terminalservice";
 
 export default {
     methods: {
@@ -173,7 +173,7 @@ export default {
                 default:
                     response = "Unknown command: " + command;
             }
-            
+
             TerminalService.emit('response', response);
         }
     },
@@ -221,7 +221,7 @@ p {
 
 <script>
 import { onMounted, onBeforeUnmount } from 'vue';
-import TerminalService from "primevue/terminalservice";
+import TerminalService from "primevue-vwinc/terminalservice";
 
 export default {
     setup() {
@@ -254,7 +254,7 @@ export default {
                 default:
                     response = "Unknown command: " + command;
             }
-            
+
             TerminalService.emit('response', response);
         }
 
@@ -329,7 +329,7 @@ p {
                         default:
                             response = "Unknown command: " + command;
                     }
-            
+
                     TerminalService.emit('response', response);
                 }
 

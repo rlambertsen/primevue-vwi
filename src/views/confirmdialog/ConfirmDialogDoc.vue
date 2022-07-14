@@ -5,7 +5,7 @@
             instance is created.</p>
 <pre v-code.script><code>
 import {createApp} from 'vue';
-import ConfirmationService from 'primevue/confirmationservice';
+import ConfirmationService from 'primevue-vwinc/confirmationservice';
 
 const app = createApp(App);
 app.use(ConfirmationService);
@@ -14,7 +14,7 @@ app.use(ConfirmationService);
 
 		<h5>Import via Module</h5>
 <pre v-code.script><code>
-import ConfirmDialog from 'primevue/confirmdialog';
+import ConfirmDialog from 'primevue-vwinc/confirmdialog';
 
 </code></pre>
 

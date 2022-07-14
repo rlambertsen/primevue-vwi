@@ -295,7 +295,7 @@ export default {
     ${extIndexCSS}
     `
 };
-            
+
             if (sourceType === 'browser-source') {
                 return {
                     files: {
@@ -397,8 +397,8 @@ export default {
 
                 serviceArr.forEach(serv => {
                     path = sourceType === 'browser-source' ? `${serv}.js` : `src/service/${serv}.js`;
-                    let _content = sourceType === 'browser-source' ? 
-                                `${services[serv].replaceAll('export default class', 'class').replaceAll('demo/data/', './')}` : 
+                    let _content = sourceType === 'browser-source' ?
+                                `${services[serv].replaceAll('export default class', 'class').replaceAll('demo/data/', './')}` :
                                 `${services[serv]}`;
 
                     _files[path] = {
@@ -440,7 +440,7 @@ export default {
                 element += `import ${name} from "./${name}.vue"`;
 
                 if (this.component) {
-                    extImport += `import ${this.component} from 'primevue/${this.component.toLowerCase()}';`
+                    extImport += `import ${this.component} from 'primevue-vwinc/${this.component.toLowerCase()}';`
                     extElement += `app.component('${this.component}', ${this.component});`;
                 }
 
@@ -499,8 +499,8 @@ export const router = createRouter({
 
                 _files['src/main.js'] = {
                     content: `import "primeflex/primeflex.css";
-import "primevue/resources/themes/lara-light-blue/theme.css";
-import "primevue/resources/primevue.min.css";
+import "primevue-vwinc/resources/themes/lara-light-blue/theme.css";
+import "primevue-vwinc/resources/primevue.min.css";
 import "primeicons/primeicons.css";
 import "./index.css";
 

@@ -1,5 +1,5 @@
-import ConfirmationEventBus from 'primevue/confirmationeventbus';
-import {PrimeVueConfirmSymbol} from 'primevue/useconfirm';
+import ConfirmationEventBus from 'primevue-vwinc/confirmationeventbus';
+import {PrimeVueConfirmSymbol} from 'primevue-vwinc/useconfirm';
 
 export default {
     install: (app) => {

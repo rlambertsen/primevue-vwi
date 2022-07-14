@@ -1,5 +1,5 @@
 import {reactive,inject} from 'vue';
-import {FilterMatchMode} from 'primevue/api';
+import {FilterMatchMode} from 'primevue-vwinc/api';
 
 const defaultOptions = {
     ripple: false,
@@ -85,8 +85,8 @@ export function usePrimeVue() {
     const PrimeVue = inject(PrimeVueSymbol);
     if (!PrimeVue) {
         throw new Error('PrimeVue is not installed!');
-    } 
-    
+    }
+
     return PrimeVue;
 }
 

@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import {DomHandler,ZIndexUtils} from 'primevue/utils';
+import {DomHandler,ZIndexUtils} from 'primevue-vwinc/utils';
 
 export default {
     name: 'ScrollTop',

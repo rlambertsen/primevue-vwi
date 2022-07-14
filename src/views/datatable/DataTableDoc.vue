@@ -710,7 +710,7 @@ data() {
 
 <pre v-code.script><code>
 import CustomerService from '../../service/CustomerService';
-import {FilterMatchMode} from 'primevue/api';
+import {FilterMatchMode} from 'primevue-vwinc/api';
 
 export default {
     data() {
@@ -797,7 +797,7 @@ data() {
                 <pre v-code.script><code>
 import {createApp} from 'vue';
 import PrimeVue from 'primevue/config';
-import FilterMatchMode from 'primevue/api',
+import FilterMatchMode from 'primevue-vwinc/api',
 const app = createApp(App);
 
 app.use(PrimeVue, {
@@ -848,7 +848,7 @@ matchModes: [
             <h6>Custom Filter</h6>
             <p>Custom filtering is implemented using the <i>FilterService</i>, first register your filter and add it to your <i>filterMatchModeOptions</i>.</p>
 <pre v-code.script><code>
-import {FilterService} from 'primevue/api';
+import {FilterService} from 'primevue-vwinc/api';
 
 FilterService.register('myfilter', (a,b) => a === b);
 </code></pre>
@@ -2740,7 +2740,7 @@ export default {
 
 <script>
 import CustomerService from './service/CustomerService';
-import {FilterMatchMode,FilterOperator} from 'primevue/api';
+import {FilterMatchMode,FilterOperator} from 'primevue-vwinc/api';
 
 export default {
     data() {
@@ -2965,7 +2965,7 @@ export default {
 <script>
 import { ref, onMounted } from "vue";
 import CustomerService from "./service/CustomerService";
-import { FilterMatchMode, FilterOperator } from "primevue/api";
+import { FilterMatchMode, FilterOperator } from "primevue-vwinc/api";
 
 export default {
     setup() {

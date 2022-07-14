@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import Button from 'primevue/button';
+import Button from 'primevue-vwinc/button';
 
 export default {
     name: 'Inplace',

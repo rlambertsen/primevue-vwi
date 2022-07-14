@@ -35,11 +35,11 @@
 </template>
 
 <script>
-import {DomHandler,ObjectUtils} from 'primevue/utils';
-import OverlayEventBus from 'primevue/overlayeventbus';
+import {DomHandler,ObjectUtils} from 'primevue-vwinc/utils';
+import OverlayEventBus from 'primevue-vwinc/overlayeventbus';
 import RowRadioButton from './RowRadioButton.vue';
 import RowCheckbox from './RowCheckbox.vue';
-import Ripple from 'primevue/ripple';
+import Ripple from 'primevue-vwinc/ripple';
 
 export default {
     name: 'BodyCell',

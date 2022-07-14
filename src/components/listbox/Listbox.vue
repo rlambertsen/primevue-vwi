@@ -46,11 +46,11 @@
 </template>
 
 <script>
-import {ObjectUtils} from 'primevue/utils';
-import {DomHandler} from 'primevue/utils';
-import {FilterService} from 'primevue/api';
-import Ripple from 'primevue/ripple';
-import VirtualScroller from 'primevue/virtualscroller';
+import {ObjectUtils} from 'primevue-vwinc/utils';
+import {DomHandler} from 'primevue-vwinc/utils';
+import {FilterService} from 'primevue-vwinc/api';
+import Ripple from 'primevue-vwinc/ripple';
+import VirtualScroller from 'primevue-vwinc/virtualscroller';
 
 export default {
     name: 'Listbox',

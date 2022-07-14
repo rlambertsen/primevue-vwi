@@ -5,8 +5,16 @@
         </div>
 		<template v-for="item of templateItems" :key="item">
 			<FirstPageLink v-if="item === 'FirstPageLink'" @click="changePageToFirst($event)" :disabled="isFirstPage || empty" />
-			<PrevPageLink v-else-if="item === 'PrevPageLink'" @click="changePageToPrev($event)" :disabled="isFirstPage || empty" />
-			<NextPageLink v-else-if="item === 'NextPageLink'" @click="changePageToNext($event)" :disabled="isLastPage || empty" />
+            <PrevPageLink v-else-if="item === 'PrevPageLink'" @click="changePageToPrev($event)" :disabled="isFirstPage || empty" :theme-class="prevPageBtnClass">
+                <template #prevBtnText v-if="$slots.prevBtnText">
+                    <slot name="prevBtnText"></slot>
+                </template>
+            </PrevPageLink>
+            <NextPageLink v-else-if="item === 'NextPageLink'" @click="changePageToNext($event)" :disabled="isLastPage || empty" :theme-class="nextPageBtnClass">
+                <template #nextBtnText v-if="$slots.nextBtnText">
+                    <slot name="nextBtnText"></slot>
+                </template>
+            </NextPageLink>
 			<LastPageLink v-else-if="item === 'LastPageLink'" @click="changePageToLast($event)" :disabled="isLastPage || empty" />
 			<PageLinks v-else-if="item === 'PageLinks'" :value="pageLinks" :page="page" @click="changePageLink($event)" />
 			<CurrentPageReport v-else-if="item === 'CurrentPageReport'" :template="currentPageReportTemplate" :currentPage="currentPage"
@@ -69,7 +77,15 @@ export default {
         alwaysShow: {
             type: Boolean,
             default: true
-        }
+        },
+        prevPageBtnClass: {
+            type: String,
+            default: 'p-paginator-prev p-paginator-element p-link'
+        },
+        nextPageBtnClass: {
+            type: String,
+            default: 'p-paginator-next p-paginator-element p-link'
+        },
     },
     data() {
         return {

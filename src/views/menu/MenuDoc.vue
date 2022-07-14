@@ -372,7 +372,7 @@ export default {
 
 <script>
 import { ref } from 'vue';
-import { useToast } from 'primevue/usetoast';
+import { useToast } from 'primevue-vwinc/usetoast';
 
 export default {
     setup() {

@@ -11,9 +11,9 @@
 </template>
 
 <script>
-import Button from 'primevue/button';
-import TieredMenu from 'primevue/tieredmenu';
-import {UniqueComponentId} from 'primevue/utils';
+import Button from 'primevue-vwinc/button';
+import TieredMenu from 'primevue-vwinc/tieredmenu';
+import {UniqueComponentId} from 'primevue-vwinc/utils';
 
 export default {
     name: 'SplitButton',

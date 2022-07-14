@@ -5,7 +5,7 @@ import Row from '@/components/row/Row.vue';
 import Column from '@/components/column/Column.vue';
 import Button from '@/components/button/Button.vue';
 import InputText from '@/components/inputtext/InputText.vue';
-import {FilterMatchMode} from 'primevue/api';
+import {FilterMatchMode} from 'primevue-vwinc/api';
 
 window.URL.createObjectURL = function() {};
 
@@ -236,7 +236,7 @@ describe('DataTable.vue', () => {
                     for(let sale of this.sales) {
                         total += sale.lastYearProfit;
                     }
-        
+
                     return this.formatCurrency(total);
                 },
                 thisYearTotal() {
@@ -244,7 +244,7 @@ describe('DataTable.vue', () => {
                     for(let sale of this.sales) {
                         total += sale.thisYearProfit;
                     }
-        
+
                     return this.formatCurrency(total);
                 }
             }
@@ -403,7 +403,7 @@ describe('DataTable.vue', () => {
         const firstCellText = wrapper.findAll('.p-datatable-tbody > tr')[0].findAll('td')[1].text();
 
         await sortableTH.trigger('click');
-        
+
         expect(wrapper.findAll('.p-datatable-tbody > tr')[0].findAll('td')[1].text()).not.toEqual(firstCellText);
         expect(sortableTH.attributes()['aria-sort']).toBe('ascending');
 
@@ -534,7 +534,7 @@ describe('DataTable.vue', () => {
                 `
             }
         });
-        
+
         expect(wrapper.findAll('td.p-selection-column').length).toBe(3);
         expect(wrapper.findAll('.p-radiobutton').length).toBe(3);
 
@@ -834,7 +834,7 @@ describe('DataTable.vue', () => {
                 `
             }
         });
-        
+
         await wrapper.vm.onRowEditCancel({ data: smallData[0] });
 
         expect(wrapper.emitted()['update:editingRows'][0][0]).toEqual([]);
@@ -1061,7 +1061,7 @@ describe('DataTable.vue', () => {
                 `
             }
         });
-        
+
         expect(wrapper.findAll('.p-datatable-reorderablerow-handle').length).toBe(3);
     });
 

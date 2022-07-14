@@ -23,10 +23,10 @@
 </template>
 
 <script>
-import {ConnectedOverlayScrollHandler,DomHandler,ZIndexUtils} from 'primevue/utils';
-import OverlayEventBus from 'primevue/overlayeventbus';
+import {ConnectedOverlayScrollHandler,DomHandler,ZIndexUtils} from 'primevue-vwinc/utils';
+import OverlayEventBus from 'primevue-vwinc/overlayeventbus';
 import Menuitem from './Menuitem.vue';
-import Portal from 'primevue/portal';
+import Portal from 'primevue-vwinc/portal';
 
 export default {
     name: 'Menu',

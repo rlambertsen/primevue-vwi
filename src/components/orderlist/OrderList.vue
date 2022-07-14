@@ -26,9 +26,9 @@
 </template>
 
 <script>
-import Button from 'primevue/button';
-import {ObjectUtils,UniqueComponentId,DomHandler} from 'primevue/utils';
-import Ripple from 'primevue/ripple';
+import Button from 'primevue-vwinc/button';
+import {ObjectUtils,UniqueComponentId,DomHandler} from 'primevue-vwinc/utils';
+import Ripple from 'primevue-vwinc/ripple';
 
 export default {
     name: 'OrderList',

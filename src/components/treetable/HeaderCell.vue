@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import {DomHandler,ObjectUtils} from 'primevue/utils';
+import {DomHandler,ObjectUtils} from 'primevue-vwinc/utils';
 
 export default {
     name: 'HeaderCell',

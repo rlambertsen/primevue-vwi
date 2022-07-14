@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import {UniqueComponentId} from 'primevue/utils';
+import {UniqueComponentId} from 'primevue-vwinc/utils';
 
 export default {
     name: 'Accordion',

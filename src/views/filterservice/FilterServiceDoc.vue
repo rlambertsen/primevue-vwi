@@ -25,7 +25,7 @@ FilterService.filters.startsWith(value, 'Vue');                        //false
 FilterService.filters.endsWith(value, 'Vue');                          //true
 FilterService.filters.lt(10, 20);                                     //true
 FilterService.filters.gt(50, 20);                                     //true
-FilterService.filters.in(value, ['PrimeFaces', 'PrimeVue']);           //true   
+FilterService.filters.in(value, ['PrimeFaces', 'PrimeVue']);           //true
 
 </code></pre>
 
@@ -40,7 +40,7 @@ FilterService.register('isPrimeNumber', (value, filter): boolean => &#123;
     if (value === undefined || value === null) &#123;
         return false;
     &#125;
-    
+
     return value.toString() === filter.toString();
 &#125;);
 
@@ -245,7 +245,7 @@ export default {
 </template>
 
 <script>
-import {FilterMatchMode,FilterService} from 'primevue/api';
+import {FilterMatchMode,FilterService} from 'primevue-vwinc/api';
 import CustomerService from './service/CustomerService';
 
 const YOUR_FILTER = 'YOUR FILTER';
@@ -270,7 +270,7 @@ export default {
     },
     mounted() {
         this.customerService.getCustomersLarge().then(data => {
-            this.customers = data; 
+            this.customers = data;
             this.loading = false;
         });
 
@@ -278,11 +278,11 @@ export default {
             if (filter === undefined || filter === null || filter.trim() === '') {
                 return true;
             }
-    
+
             if (value === undefined || value === null) {
                 return false;
             }
-            
+
             return value.toString() === filter.toString();
         });
     }
@@ -328,14 +328,14 @@ export default {
 
 <script>
 import { ref, onMounted } from 'vue';
-import {FilterMatchMode,FilterService} from 'primevue/api';
+import {FilterMatchMode,FilterService} from 'primevue-vwinc/api';
 import CustomerService from './service/CustomerService';
 
 export default {
     setup() {
 		onMounted(() => {
 			customerService.value.getCustomersLarge().then(data => {
-        	    customers.value = data; 
+        	    customers.value = data;
         	    loading.value = false;
         	});
 
@@ -343,11 +343,11 @@ export default {
         	    if (filter === undefined || filter === null || filter.trim() === '') {
         	        return true;
         	    }
-	
+
         	    if (value === undefined || value === null) {
         	        return false;
         	    }
-	
+
         	    return value.toString() === filter.toString();
         	});
 		})
@@ -415,7 +415,7 @@ export default {
 				setup() {
 					onMounted(() => {
 						customerService.value.getCustomersLarge().then(data => {
-							customers.value = data; 
+							customers.value = data;
 							loading.value = false;
 						});
 
@@ -423,11 +423,11 @@ export default {
 							if (filter === undefined || filter === null || filter.trim() === '') {
 								return true;
 							}
-				
+
 							if (value === undefined || value === null) {
 								return false;
 							}
-				
+
 							return value.toString() === filter.toString();
 						});
 					})

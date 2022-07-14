@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import InputNumber from 'primevue/inputnumber';
+import InputNumber from 'primevue-vwinc/inputnumber';
 
 export default {
     name: 'JumpToPageInput',

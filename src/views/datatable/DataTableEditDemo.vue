@@ -78,7 +78,7 @@
 
 <script>
 import ProductService from '../../service/ProductService';
-import {FilterMatchMode} from 'primevue/api';
+import {FilterMatchMode} from 'primevue-vwinc/api';
 
 export default {
     data() {
@@ -169,7 +169,7 @@ export default {
 
 <script>
 import ProductService from './service/ProductService';
-import {FilterMatchMode} from 'primevue/api';
+import {FilterMatchMode} from 'primevue-vwinc/api';
 
 export default {
     data() {
@@ -340,7 +340,7 @@ export default {
 <script>
 import { ref, onMounted } from 'vue';
 import ProductService from './service/ProductService';
-import {FilterMatchMode} from 'primevue/api';
+import {FilterMatchMode} from 'primevue-vwinc/api';
 
 export default {
     setup() {

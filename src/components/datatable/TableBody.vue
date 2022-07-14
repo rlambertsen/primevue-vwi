@@ -1,5 +1,6 @@
 <template>
     <tbody :ref="bodyRef" class="p-datatable-tbody" role="rowgroup" :style="bodyStyle">
+        <slot name="tbodyTop"></slot>
         <template v-if="!empty">
             <template v-for="(rowData, index) of value" :key="getRowKey(rowData, getRowIndex(index)) + '_subheader'">
                 <tr class="p-rowgroup-header" :style="rowGroupHeaderStyle" v-if="templates['groupheader'] && rowGroupMode === 'subheader' && shouldRenderRowGroupHeader(value, rowData, getRowIndex(index))" role="row">
@@ -44,7 +45,7 @@
 </template>
 
 <script>
-import {ObjectUtils,DomHandler} from 'primevue/utils';
+import {ObjectUtils,DomHandler} from 'primevue-vwinc/utils';
 import BodyCell from './BodyCell.vue';
 
 export default {

@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import {DomHandler} from 'primevue/utils';
+import {DomHandler} from 'primevue-vwinc/utils';
 
 export default {
     name: 'Slider',

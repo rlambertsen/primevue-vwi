@@ -215,7 +215,7 @@
 
 <script>
 import CustomerService from '../../service/CustomerService';
-import {FilterMatchMode,FilterOperator} from 'primevue/api';
+import {FilterMatchMode,FilterOperator} from 'primevue-vwinc/api';
 
 export default {
     data() {
@@ -457,7 +457,7 @@ export default {
 
 <script>
 import CustomerService from './service/CustomerService';
-import {FilterMatchMode,FilterOperator} from 'primevue/api';
+import {FilterMatchMode,FilterOperator} from 'primevue-vwinc/api';
 
 export default {
     data() {
@@ -498,13 +498,13 @@ export default {
     },
     mounted() {
         this.customerService.getCustomersLarge().then(data => {
-            this.customers1 = data; 
+            this.customers1 = data;
             this.loading1 = false;
             this.customers1.forEach(customer => customer.date = new Date(customer.date));
         });
-        
+
         this.customerService.getCustomersLarge().then(data => {
-            this.customers2 = data; 
+            this.customers2 = data;
             this.loading2 = false;
             this.customers2.forEach(customer => customer.date = new Date(customer.date));
         });
@@ -799,19 +799,19 @@ export default {
 <script>
 import { ref ,onMounted } from 'vue';
 import CustomerService from './service/CustomerService';
-import {FilterMatchMode,FilterOperator} from 'primevue/api';
+import {FilterMatchMode,FilterOperator} from 'primevue-vwinc/api';
 
 export default {
     setup() {
         onMounted(() => {
             customerService.value.getCustomersLarge().then(data => {
-                customers1.value = data; 
+                customers1.value = data;
                 loading1.value = false;
                 customers1.value.forEach(customer => customer.date = new Date(customer.date));
             });
-        
+
             customerService.value.getCustomersLarge().then(data => {
-                customers2.value = data; 
+                customers2.value = data;
                 loading2.value = false;
                 customers2.value.forEach(customer => customer.date = new Date(customer.date));
             });
@@ -1159,13 +1159,13 @@ export default {
             setup() {
                 onMounted(() => {
                     customerService.value.getCustomersLarge().then(data => {
-                        customers1.value = data; 
+                        customers1.value = data;
                         loading1.value = false;
                         customers1.value.forEach(customer => customer.date = new Date(customer.date));
                     });
-                
+
                     customerService.value.getCustomersLarge().then(data => {
-                        customers2.value = data; 
+                        customers2.value = data;
                         loading2.value = false;
                         customers2.value.forEach(customer => customer.date = new Date(customer.date));
                     });
@@ -1315,13 +1315,13 @@ export default {
     },
     mounted() {
         this.customerService.getCustomersLarge().then(data => {
-            this.customers1 = data; 
+            this.customers1 = data;
             this.loading1 = false;
             this.customers1.forEach(customer => customer.date = new Date(customer.date));
         });
-        
+
         this.customerService.getCustomersLarge().then(data => {
-            this.customers2 = data; 
+            this.customers2 = data;
             this.loading2 = false;
             this.customers2.forEach(customer => customer.date = new Date(customer.date));
         });

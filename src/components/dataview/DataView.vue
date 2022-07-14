@@ -40,8 +40,8 @@
 	</div>
 </template>
 <script>
-import {ObjectUtils} from 'primevue/utils';
-import Paginator from 'primevue/paginator';
+import {ObjectUtils} from 'primevue-vwinc/utils';
+import Paginator from 'primevue-vwinc/paginator';
 
 export default {
     name: 'DataView',

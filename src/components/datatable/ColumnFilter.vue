@@ -54,12 +54,12 @@
 </template>
 
 <script>
-import {DomHandler,ConnectedOverlayScrollHandler,ZIndexUtils} from 'primevue/utils';
-import OverlayEventBus from 'primevue/overlayeventbus';
-import {FilterOperator} from 'primevue/api';
-import Dropdown from 'primevue/dropdown';
-import Button from 'primevue/button';
-import Portal from 'primevue/portal';
+import {DomHandler,ConnectedOverlayScrollHandler,ZIndexUtils} from 'primevue-vwinc/utils';
+import OverlayEventBus from 'primevue-vwinc/overlayeventbus';
+import {FilterOperator} from 'primevue-vwinc/api';
+import Dropdown from 'primevue-vwinc/dropdown';
+import Button from 'primevue-vwinc/button';
+import Portal from 'primevue-vwinc/portal';
 
 export default {
     name: 'ColumnFilter',

@@ -12,8 +12,8 @@
 </template>
 
 <script>
-import InputText from 'primevue/inputtext';
-import Button from 'primevue/button';
+import InputText from 'primevue-vwinc/inputtext';
+import Button from 'primevue-vwinc/button';
 
 export default {
     name: 'InputNumber',
@@ -928,7 +928,7 @@ export default {
             let newValue = this.validateValue(this.parseValue(input.value));
 
             this.$emit('blur', { originalEvent: event, value: input.value});
-            
+
             input.value = this.formatValue(newValue);
             input.setAttribute('aria-valuenow', newValue);
             this.updateModel(event, newValue);
@@ -955,7 +955,7 @@ export default {
                 'p-inputnumber-buttons-vertical': this.showButtons && this.buttonLayout === 'vertical'
             }];
         },
-        
+
         upButtonClass() {
             return ['p-inputnumber-button p-inputnumber-button-up', this.incrementButtonClass, {
                 'p-disabled': this.showButtons && this.max !== null && this.maxBoundry()

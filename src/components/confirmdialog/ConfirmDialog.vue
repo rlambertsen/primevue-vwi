@@ -11,9 +11,9 @@
 </template>
 
 <script>
-import ConfirmationEventBus from 'primevue/confirmationeventbus';
-import Dialog from 'primevue/dialog';
-import Button from 'primevue/button';
+import ConfirmationEventBus from 'primevue-vwinc/confirmationeventbus';
+import Dialog from 'primevue-vwinc/dialog';
+import Button from 'primevue-vwinc/button';
 
 export default {
     name: 'ConfirmDialog',

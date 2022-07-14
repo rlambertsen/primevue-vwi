@@ -2,7 +2,7 @@
 	<AppDoc name="OrganizationChartDemo" :sources="sources" github="organizationchart/OrganizationChartDemo.vue">
         <h5>Import via Module</h5>
 <pre v-code.script><code>
-import OrganizationChart from 'primevue/organizationchart';
+import OrganizationChart from 'primevue-vwinc/organizationchart';
 
 </code></pre>
 
@@ -743,7 +743,7 @@ export default {
 
 <script>
 import { ref } from 'vue';
-import { useToast } from 'primevue/usetoast';
+import { useToast } from 'primevue-vwinc/usetoast';
 
 export default {
     setup() {

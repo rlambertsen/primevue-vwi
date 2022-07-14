@@ -27,8 +27,8 @@
 </template>
 
 <script>
-import Ripple from 'primevue/ripple';
-import Tooltip from 'primevue/tooltip';
+import Ripple from 'primevue-vwinc/ripple';
+import Tooltip from 'primevue-vwinc/tooltip';
 
 export default {
     name: 'DockSub',

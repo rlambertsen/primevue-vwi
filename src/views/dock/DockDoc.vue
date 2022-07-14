@@ -245,7 +245,7 @@ export default {
 <script>
 import NodeService from './service/NodeService';
 import PhotoService from './service/PhotoService';
-import TerminalService from 'primevue/terminalservice';
+import TerminalService from 'primevue-vwinc/terminalservice';
 
 export default {
     data() {
@@ -645,10 +645,10 @@ export default {
 
 <script>
 import { ref, onMounted, onBeforeUnmount } from 'vue';
-import { useToast } from 'primevue/usetoast';
+import { useToast } from 'primevue-vwinc/usetoast';
 import NodeService from './service/NodeService';
 import PhotoService from './service/PhotoService';
-import TerminalService from 'primevue/terminalservice';
+import TerminalService from 'primevue-vwinc/terminalservice';
 
 export default {
     setup() {

@@ -130,7 +130,7 @@ export default {
 
 <script>
 import { ref, onMounted } from 'vue';
-import { useToast } from 'primevue/usetoast';
+import { useToast } from 'primevue-vwinc/usetoast';
 import NodeService from './service/NodeService';
 
 export default {

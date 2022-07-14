@@ -1,15 +1,6 @@
 {
-    "name": "primevue",
-    "version": "3.13.2-SNAPSHOT",
-    "homepage": "https://www.primefaces.org/primevue",
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/primefaces/primevue.git"
-    },
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/primefaces/primevue/issues"
-    },
+    "name": "primevue-vwinc",
+    "version": "0.0.13",
     "keywords": [
       "primevue",
       "vue",

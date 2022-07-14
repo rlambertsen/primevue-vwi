@@ -67,12 +67,12 @@
 </template>
 
 <script>
-import {ConnectedOverlayScrollHandler,ObjectUtils,DomHandler,ZIndexUtils} from 'primevue/utils';
-import OverlayEventBus from 'primevue/overlayeventbus';
-import {FilterService} from 'primevue/api';
-import Ripple from 'primevue/ripple';
-import VirtualScroller from 'primevue/virtualscroller';
-import Portal from 'primevue/portal';
+import {ConnectedOverlayScrollHandler,ObjectUtils,DomHandler,ZIndexUtils} from 'primevue-vwinc/utils';
+import OverlayEventBus from 'primevue-vwinc/overlayeventbus';
+import {FilterService} from 'primevue-vwinc/api';
+import Ripple from 'primevue-vwinc/ripple';
+import VirtualScroller from 'primevue-vwinc/virtualscroller';
+import Portal from 'primevue-vwinc/portal';
 
 export default {
     name: 'Dropdown',

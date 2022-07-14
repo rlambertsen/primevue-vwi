@@ -352,7 +352,7 @@ export default {
 
 <script>
 import { ref } from 'vue';
-import { useToast } from "primevue/usetoast";
+import { useToast } from "primevue-vwinc/usetoast";
 
 export default {
     setup() {
@@ -907,7 +907,7 @@ export default {
                 bottom: 0;
             }
 
-        
+
             .speeddial-delay-demo .p-speeddial-direction-up {
                 left: calc(50% - 2rem);
                 bottom: 0;

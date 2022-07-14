@@ -73,12 +73,12 @@
 </template>
 
 <script>
-import {ObjectUtils,DomHandler} from 'primevue/utils';
-import {FilterService} from 'primevue/api';
+import {ObjectUtils,DomHandler} from 'primevue-vwinc/utils';
+import {FilterService} from 'primevue-vwinc/api';
 import TreeTableRow from './TreeTableRow.vue';
 import HeaderCell from './HeaderCell.vue';
 import FooterCell from './FooterCell.vue';
-import Paginator from 'primevue/paginator';
+import Paginator from 'primevue-vwinc/paginator';
 
 export default {
     name: 'TreeTable',

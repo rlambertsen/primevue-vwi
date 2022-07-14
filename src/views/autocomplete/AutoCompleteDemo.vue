@@ -50,7 +50,7 @@
 <script>
 import CountryService from '../../service/CountryService';
 import AutoCompleteDoc from './AutoCompleteDoc';
-import {FilterService,FilterMatchMode} from 'primevue/api';
+import {FilterService,FilterMatchMode} from 'primevue-vwinc/api';
 
 export default {
     data() {

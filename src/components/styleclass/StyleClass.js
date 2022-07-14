@@ -1,4 +1,4 @@
-import {DomHandler} from 'primevue/utils';
+import {DomHandler} from 'primevue-vwinc/utils';
 
 function bind(el, binding) {
     el.$_pstyleclass_clicklistener = () => {
@@ -13,7 +13,7 @@ function bind(el, binding) {
         else {
             if (target.offsetParent === null)
                 enter(target, el, binding);
-            else 
+            else
                 leave(target, binding);
         }
     };
@@ -53,14 +53,14 @@ function enter(target, el, binding) {
                     DomHandler.addClass(target, binding.value.enterToClass);
                 }
                 target.removeEventListener('animationend', target.$p_styleclass_enterlistener);
-            
+
                 if (binding.value.enterActiveClass === 'slidedown') {
                     target.style.maxHeight = '';
                 }
-        
+
                 target.$_pstyleclass_animating = false;
             };
-            
+
             target.addEventListener('animationend', target.$p_styleclass_enterlistener);
         }
     }
@@ -145,7 +145,7 @@ function bindDocumentListener(target, el, binding) {
                 leave(target, binding);
             }
         }
-        
+
         target.ownerDocument.addEventListener('click', target.$p_styleclass_documentlistener);
     }
 }

@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import {DomHandler, ObjectUtils} from 'primevue/utils';
+import {DomHandler, ObjectUtils} from 'primevue-vwinc/utils';
 import BodyCell from './BodyCell.vue';
 
 export default {

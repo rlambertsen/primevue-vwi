@@ -2,7 +2,7 @@
 	<AppDoc name="ScrollPanelDemo" :sources="sources" github="scrollpanel/ScrollPanelDemo.vue">
         <h5>Import via Module</h5>
 <pre v-code.script><code>
-import ScrollPanel from 'primevue/scrollpanel';
+import ScrollPanel from 'primevue-vwinc/scrollpanel';
 
 </code></pre>
 
@@ -202,7 +202,7 @@ export default {
             opacity: 1;
             transition: background-color .2s;
         }
-    }  
+    }
 }
 </style>`
                 },
@@ -308,7 +308,7 @@ export default {
             opacity: 1;
             transition: background-color .2s;
         }
-    }  
+    }
 }
 </style>`
                 },
@@ -419,7 +419,7 @@ export default {
         }
         </style>`
                 }
-            } 
+            }
         }
     }
 }

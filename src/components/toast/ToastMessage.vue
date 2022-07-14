@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import Ripple from 'primevue/ripple';
+import Ripple from 'primevue-vwinc/ripple';
 
 export default {
     name: 'ToastMessage',

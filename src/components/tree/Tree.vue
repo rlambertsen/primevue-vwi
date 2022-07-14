@@ -22,7 +22,7 @@
 
 <script>
 import TreeNode from './TreeNode.vue';
-import {ObjectUtils} from 'primevue/utils';
+import {ObjectUtils} from 'primevue-vwinc/utils';
 
 export default {
     name: 'Tree',

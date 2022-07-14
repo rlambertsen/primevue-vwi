@@ -21,10 +21,10 @@
 </template>
 
 <script>
-import Button from 'primevue/button';
-import Ripple from 'primevue/ripple';
-import Tooltip from 'primevue/tooltip';
-import {DomHandler} from 'primevue/utils';
+import Button from 'primevue-vwinc/button';
+import Ripple from 'primevue-vwinc/ripple';
+import Tooltip from 'primevue-vwinc/tooltip';
+import {DomHandler} from 'primevue-vwinc/utils';
 
 export default {
     name: 'SpeedDial',

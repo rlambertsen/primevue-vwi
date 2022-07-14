@@ -11,8 +11,8 @@
 
 <script>
 import GalleriaContent from './GalleriaContent.vue';
-import {DomHandler,ZIndexUtils} from 'primevue/utils';
-import Portal from 'primevue/portal';
+import {DomHandler,ZIndexUtils} from 'primevue-vwinc/utils';
+import Portal from 'primevue-vwinc/portal';
 
 export default {
     name: 'Galleria',

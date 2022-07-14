@@ -127,14 +127,14 @@
                 </DataTable>
             </div>
 		</div>
-              
+
         <AppDoc name="DataTableStateDemo" :sources="sources" :service="['CustomerService']" :data="['customers-medium']" github="datatable/DataTableStateDemo.vue" />
 
 	</div>
 </template>
 
 <script>
-import { FilterMatchMode } from 'primevue/api';
+import { FilterMatchMode } from 'primevue-vwinc/api';
 import CustomerService from '../../service/CustomerService';
 
 export default {
@@ -288,7 +288,7 @@ export default {
 </template>
 
 <script>
-import { FilterMatchMode } from 'primevue/api';
+import { FilterMatchMode } from 'primevue-vwinc/api';
 import CustomerService from './service/CustomerService';
 
 export default {
@@ -339,7 +339,7 @@ export default {
         }
     }
 }
-<\\/script>                  
+<\\/script>
 `
                 },
                 'composition-api': {
@@ -469,7 +469,7 @@ export default {
 
 <script>
 import { ref, onMounted } from 'vue';
-import { FilterMatchMode } from 'primevue/api';
+import { FilterMatchMode } from 'primevue-vwinc/api';
 import CustomerService from './service/CustomerService';
 
 export default {
@@ -504,7 +504,7 @@ export default {
         return { customers, customerService, selectedCustomer1, selectedCustomer2, filters1, filters2, loading, representatives, statuses }
     }
 }
-<\\/script>                  
+<\\/script>
 `
                 },
                 'browser-source': {
@@ -680,7 +680,7 @@ export default {
         createApp(App)
             .use(primevue.config.default)
             .mount("#app");
-        <\\/script>                  
+        <\\/script>
 `
                 }
             }
